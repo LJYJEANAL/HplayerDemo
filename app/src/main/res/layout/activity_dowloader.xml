@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dowloader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="smc.hplayerdemo.downloader.DowloaderActivity">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/ql_download_progressbar" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/downloadButton"
+        android:layout_below="@+id/progressBar"
+        android:text="下载"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pause_button"
+        android:layout_below="@+id/downloadButton"
+        android:text="暂停"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/continue_button"
+        android:layout_below="@+id/pause_button"
+        android:text="继续"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"/>
+</RelativeLayout>

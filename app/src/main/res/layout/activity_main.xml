@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="smc.hplayerdemo.MainActivity">
+    <smc.hplayerdemo.view.HVideoPlayer
+        android:id="@+id/custom_videoplayer_standard"
+        android:layout_width="match_parent"
+        android:layout_height="200dip" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:layout_below="@+id/custom_videoplayer_standard"
+        android:gravity="center"
+        android:text="跳转下载页面"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"/>
+    <!--底部的view跟随输入法弹起-->
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:fadeScrollbars="true"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:padding="10dip"
+            android:textSize="20sp"
+            android:background="@drawable/button__barder_shape"
+            android:hint="@string/app_name"/>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffe3cc">
+
+    <TextView
+        android:id="@+id/parent_textview"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="center"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+</LinearLayout>

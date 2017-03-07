@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_down"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="smc.hplayerdemo.down.DownActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/file_name"
+        android:layout_marginBottom="20dip"
+        android:text="下载.apk"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:id="@+id/pb_update"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_gravity="center_horizontal"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/jc_seek_progress"
+        android:layout_marginBottom="20dip"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:gravity="center"
+        android:layout_marginBottom="20dip"
+        android:text="0dip"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/down"
+        android:gravity="center"
+        android:layout_marginBottom="20dip"
+        android:text="立即下载"/>
+    <Button
+        android:id="@+id/toBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="跳转"/>
+
+
+
+</LinearLayout>

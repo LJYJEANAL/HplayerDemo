@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_vf"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="smc.hplayerdemo.VFActivity">
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dip"
+
+        android:flipInterval="3000" >  // 设置滑动间隔时间（毫秒）
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:src="@mipmap/t"
+            android:scaleType="fitXY"
+            android:textSize="26sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:src="@mipmap/t1"
+            android:scaleType="fitXY"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:src="@mipmap/t3"
+            android:scaleType="fitXY"
+            android:textSize="26sp" />
+    </ViewFlipper>
+    <Button
+        android:id="@+id/toGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8b20ce"
+        android:text="toGallery"
+        android:gravity="center"
+        android:layout_below="@+id/flipper"/>
+    <smc.hplayerdemo.view.SecondBezierView
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_below="@+id/toGallery"
+        android:background="#ff00"/>
+</RelativeLayout>
