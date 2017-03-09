@@ -2,7 +2,6 @@ package smc.hplayerdemo;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
@@ -43,12 +42,12 @@ public class VFActivity extends BaseActivity implements GestureDetector.OnGestur
     public boolean onTouchEvent(MotionEvent event) {
 //        Log.e("信息","event.getX()"+event.getX()+"--event.getY()"+event.getY()+"--event.getRawX()"+event.getRawX()+
 //                "--event.getRawY()"+event.getRawY());
-        velocityTracker = VelocityTracker.obtain();
-        velocityTracker.addMovement(event);
-        velocityTracker.computeCurrentVelocity(1000);
-        int xvelocityTracker=(int)velocityTracker.getXVelocity();
-        int yvelocityTracker=(int)velocityTracker.getYVelocity();
-        Log.e("信息",xvelocityTracker+"----"+yvelocityTracker);
+//        velocityTracker = VelocityTracker.obtain();
+//        velocityTracker.addMovement(event);
+//        velocityTracker.computeCurrentVelocity(1000);
+//        int xvelocityTracker=(int)velocityTracker.getXVelocity();
+//        int yvelocityTracker=(int)velocityTracker.getYVelocity();
+//        Log.e("信息",xvelocityTracker+"----"+yvelocityTracker);
 
         return mGestureDetetor.onTouchEvent(event);
     }
