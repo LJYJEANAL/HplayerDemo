@@ -26,10 +26,8 @@ public class VFActivity extends BaseActivity implements GestureDetector.OnGestur
         mFlipper.setInAnimation(AnimationUtils.loadAnimation(this, R.anim.push_up_in));
         // 设置滚出动画
         mFlipper.setOutAnimation(AnimationUtils.loadAnimation(this, R.anim.push_up_out));
-
         mGestureDetetor = new GestureDetector(VFActivity.this);
         mGestureDetetor.setIsLongpressEnabled(false);//解决长按屏幕后无法拖动现象
-
         Button toGallery = (Button) findViewById(R.id.toGallery);
         toGallery.setOnClickListener(new View.OnClickListener() {
             @Override
