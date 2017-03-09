@@ -6,10 +6,6 @@ import android.util.Log;
 import android.view.Window;
 
 import smc.hplayerdemo.util.ActivityCollector;
-
-/**
- *
- */
 public class BaseActivity extends AppCompatActivity {
 
     @Override
