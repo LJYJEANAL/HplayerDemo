@@ -20,16 +20,18 @@
             android:name=".MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".downloader.DowloaderActivity" />
+        <activity android:name=".down.DownActivity" />
+        <activity android:name=".ExpandablelistActivity" />
+        <activity android:name=".VFActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".downloader.DowloaderActivity" />
-        <activity android:name=".down.DownActivity" />
-        <activity android:name=".ExpandablelistActivity" />
-        <activity android:name=".VFActivity" />
         <activity android:name=".GalleryActivity" />
         <activity android:name=".BaseActivity"></activity>
     </application>
