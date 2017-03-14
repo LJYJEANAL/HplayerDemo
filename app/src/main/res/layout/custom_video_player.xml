@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black">
@@ -24,7 +25,8 @@
         android:layout_alignParentTop="true"
         android:layout_weight="1"
         android:background="#000000"
-        android:scaleType="fitCenter" />
+        android:scaleType="fitCenter"
+        tools:ignore="ContentDescription" />
 
     <LinearLayout
         android:id="@+id/layout_bottom"
@@ -77,7 +79,8 @@
             android:padding="8dp"
             android:paddingRight="16dp"
             android:scaleType="center"
-            android:src="@drawable/jc_shrink" />
+            android:src="@drawable/jc_shrink"
+            tools:ignore="ContentDescription" />
     </LinearLayout>
 
     <ProgressBar
@@ -97,7 +100,8 @@
         android:layout_marginLeft="6dp"
         android:layout_marginTop="6dp"
         android:background="@drawable/jc_click_back_tiny_selector"
-        android:visibility="visible" />
+        android:visibility="visible"
+        tools:ignore="ContentDescription" />
 
     <LinearLayout
         android:id="@+id/layout_top"
@@ -112,7 +116,8 @@
             android:layout_height="48dp"
             android:paddingLeft="10dp"
             android:scaleType="centerInside"
-            android:src="@drawable/jc_back" />
+            android:src="@drawable/jc_back"
+            tools:ignore="ContentDescription" />
 
 
         <TextView
@@ -132,7 +137,6 @@
         android:layout_centerVertical="true"
         android:indeterminateDrawable="@drawable/jc_loading"
         android:visibility="invisible" />
-
     <ImageView
         android:id="@+id/start"
         android:layout_width="60dp"
@@ -140,7 +144,8 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_gravity="center_vertical"
-        android:src="@drawable/jc_click_play_selector" />
+        android:src="@drawable/jc_click_play_selector"
+        tools:ignore="ContentDescription" />
 
 
 </RelativeLayout>

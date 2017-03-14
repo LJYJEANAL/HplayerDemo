@@ -8,7 +8,10 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />
     <!-- 重力感应 -->
     <application
         android:allowBackup="true"
@@ -20,20 +23,19 @@
             android:name=".MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait">
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".downloader.DowloaderActivity" />
         <activity android:name=".down.DownActivity" />
         <activity android:name=".ExpandablelistActivity" />
-        <activity android:name=".VFActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".VFActivity" ></activity>
         <activity android:name=".GalleryActivity" />
         <activity android:name=".BaseActivity"></activity>
+        <activity android:name=".video.FirstActivity"></activity>
+        <activity android:name=".video.VideoMainActivity"></activity>
     </application>
 
 </manifest>
