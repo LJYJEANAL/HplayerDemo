@@ -20,5 +20,11 @@
         android:layout_marginBottom="10dip"
         android:gravity="center"
         android:orientation="horizontal"/>
+    <Button
+        android:id="@+id/gal_btn"
+        android:layout_below="@+id/home_adpoint_ll"
+        android:layout_width="wrap_content"
+        android:text="跳转"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>

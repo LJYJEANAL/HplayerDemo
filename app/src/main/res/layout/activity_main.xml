@@ -8,7 +8,7 @@
     <smc.hplayerdemo.view.HVideoPlayer
         android:id="@+id/custom_videoplayer_standard"
         android:layout_width="match_parent"
-        android:layout_height="200dip" />
+        android:layout_height="100dp" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,23 +18,12 @@
         android:text="跳转下载页面"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"/>
-    <!--底部的view跟随输入法弹起-->
-    <ScrollView
-        android:id="@+id/sv"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:fadeScrollbars="true"
-        android:visibility="gone"
-        android:layout_alignParentBottom="true"
-        android:fillViewport="true">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dip"
-            android:padding="10dip"
-            android:textSize="20sp"
-            android:background="@drawable/button__barder_shape"
-            android:hint="@string/app_name"/>
-    </ScrollView>
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/checkUrl_btn"
+      android:text="切换"
+      android:textSize="18sp"
+      android:layout_below="@+id/btn"/>
 
 </RelativeLayout>
