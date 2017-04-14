@@ -7,11 +7,13 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" >
-    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <!-- 重力感应 -->
     <application
         android:allowBackup="true"
@@ -25,17 +27,30 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".downloader.DowloaderActivity" />
         <activity android:name=".down.DownActivity" />
         <activity android:name=".ExpandablelistActivity" />
-        <activity android:name=".VFActivity" ></activity>
+        <activity android:name=".VFActivity" />
         <activity android:name=".GalleryActivity" />
-        <activity android:name=".BaseActivity"></activity>
-        <activity android:name=".video.FirstActivity"></activity>
-        <activity android:name=".video.VideoMainActivity"></activity>
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".video.FirstActivity" />
+        <activity android:name=".video.VideoMainActivity" />
+        <activity android:name=".ChoosePicActivity" />
+        <activity android:name=".ViewSetAcitivity" />
+        <activity
+            android:name=".StandActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".gallery.GalleryViewActivity" />
+        <activity android:name=".securitycodeview.SecurityCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTransparent">>
+
+        </activity>
     </application>
 
 </manifest>

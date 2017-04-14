@@ -7,5 +7,19 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="text_editStyle" >
+        <item name="android:layout_height">47dp</item>
+        <item name="android:layout_width">47dp</item>
+        <item name="android:background">@mipmap/bg_verify</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/common_blue_0090FF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="myTransparent">
+        <item name="android:windowBackground">@drawable/user_icon_shape</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
 </resources>
