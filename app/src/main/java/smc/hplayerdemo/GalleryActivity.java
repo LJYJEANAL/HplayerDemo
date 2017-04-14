@@ -1,8 +1,11 @@
 package smc.hplayerdemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -22,6 +25,13 @@ public class GalleryActivity extends BaseActivity {
         setContentView(R.layout.activity_gallery);
         home_ad_gallery = (MyAdGallery) findViewById(R.id.home_ad_gallery);
         home_adpoint_ll = (LinearLayout) findViewById(R.id.home_adpoint_ll);
+        Button gal_btn = (Button) findViewById(R.id.gal_btn);
+        gal_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(GalleryActivity.this,ChoosePicActivity.class));
+            }
+        });
 
         List<String> mAdUrlList = new ArrayList<String>();
 //        mAdUrlList.add();

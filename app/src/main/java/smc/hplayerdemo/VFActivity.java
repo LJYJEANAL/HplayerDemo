@@ -1,6 +1,6 @@
 package smc.hplayerdemo;
 
-import android.animation.ValueAnimator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -31,25 +31,25 @@ public class VFActivity extends BaseActivity implements GestureDetector.OnGestur
         mGestureDetetor = new GestureDetector(VFActivity.this);
         mGestureDetetor.setIsLongpressEnabled(false);//解决长按屏幕后无法拖动现象
         toGallery = (Button) findViewById(R.id.toGallery);
-
         toGallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                startActivity(new Intent(VFActivity.this,GalleryActivity.class));
-//                toGallery.setTranslationX(100);
+                startActivity(new Intent(VFActivity.this,GalleryActivity.class));
+//         toGallery.setTranslationX(100);
 //        toGallery.setTranslationY(50);
 //        ObjectAnimator.ofFloat(toGallery,"translationY",0,200).setDuration(500).start();//1s内平移200个像素
-                final int startxX = 0;
-                final int deltaX = 150;
-                final ValueAnimator animator = ValueAnimator.ofInt(0, 1).setDuration(1000);
-                animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-                    @Override
-                    public void onAnimationUpdate(ValueAnimator animation) {
-                        float fraction = animator.getAnimatedFraction();
-                        toGallery.setTranslationX(startxX + (int) (deltaX * fraction));
-                    }
-                });
-                animator.start();
+                /**--------*/
+//                final int startxX = 0;
+//                final int deltaX = 150;
+//                final ValueAnimator animator = ValueAnimator.ofInt(0, 1).setDuration(1000);
+//                animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+//                    @Override
+//                    public void onAnimationUpdate(ValueAnimator animation) {
+//                        float fraction = animator.getAnimatedFraction();
+//                        toGallery.setTranslationX(startxX + (int) (deltaX * fraction));
+//                    }
+//                });
+//                animator.start();
             }
         });
 
